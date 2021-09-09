@@ -94,7 +94,7 @@ accounts.php
 ```
 
 config.php is empty page with 0 length, but nav.php shows some valuable information about navigation on the site:
-![eb28c0d0a939136a416287a2581901e9.png](../_resources/0ad7041589084a77b78c5c49c57df554.png)
+![eb28c0d0a939136a416287a2581901e9.png](/_resources/0ad7041589084a77b78c5c49c57df554.png)
 But every link on this navigation page redirects to the default login page `http://10.10.11.104/login.php`
 
 Clicking files.php on this page and intercepting the request via burp suite shows that server actually sends us `files.php` but it then immediately redirects to `login.php` so we do not see files.php in our browser.
